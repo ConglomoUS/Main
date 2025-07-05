@@ -1,7 +1,7 @@
 # Control Panel - Devices and Printers Classic UI
 
 !!! Note
-    Link to the original [repo])(https://github.com/ConglomoUS/Control_Panel_Devices_and_Printers_Classic_UI)
+    Link to the original [repo](https://github.com/ConglomoUS/Control_Panel_Devices_and_Printers_Classic_UI)
 
 Don't you just hate that Microsoft changed the Control Panel icon that goes to Devices and Printers to now go to Settings. 
 
