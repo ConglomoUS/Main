@@ -1,0 +1,272 @@
+/* custom.css */
+
+/* Import Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+/* Define Segoe UI Font Faces */
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/segoeui.ttf') format('truetype'),
+         url('../fonts/segoeuil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Black';
+    src: url('../fonts/segoeuib.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Normal */
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arialbd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ariali.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arialbi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Narrow Normal */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ARIALN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Narrow Bold */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ARIALNB.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Narrow Italic */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ARIALNI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Narrow Bold Italic */
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ARIALNBI.TTF') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Normal */
+@font-face {
+    font-family: 'Courier New';
+    src: url('../fonts/COUR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Courier New';
+    src: url('../fonts/COURBD.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Courier New';
+    src: url('../fonts/COURI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Courier New';
+    src: url('../fonts/COURBI.TTF') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Light mode colors */
+[data-md-color-scheme="default"] {
+    --title-color: #333333 !important; /* Dark grey for light mode */
+    --md-primary-fg-color: #054f7d !important;  /* Blue */
+    --md-primary-fg-color--light: #76a1c3 !important;
+    --md-primary-fg-color--dark: #032f4b !important;
+    --md-accent-fg-color: #076734 !important;   /* Green */
+    --md-default-bg-color: #eee7e7 !important;  /* White background for default theme #ffffff*/
+    --md-default-fg-color: #333333 !important;  /* Dark grey text */
+    --md-secondary-fg-color: #666666 !important; /* Medium grey text for secondary elements */
+    --md-typeset-a-color: #054f7d !important;  /* Primary link color */
+}
+
+/* Dark mode colors */
+[data-md-color-scheme="slate"] {
+    --title-color: #cccccc !important; /* Light grey for dark mode */
+    --md-primary-fg-color: #054f7d !important;  /* Blue */
+    --md-primary-fg-color--light: #5FA8FF !important;
+    --md-primary-fg-color--dark: #2B6CB3 !important;
+    --md-accent-fg-color: #3B82F6 !important;   /* Blue Accent */
+    --md-default-bg-color: #171717 !important;  /* Dark background for slate theme */
+    --md-default-fg-color: #cccccc !important;  /* Light grey text */
+    --md-secondary-fg-color: #A0A0A0 !important; /* Medium grey text for secondary elements */
+    --md-typeset-a-color: #1eff00 !important;   /* Bright green link color */
+}
+
+
+/* General styling */
+body {
+    font-family: 'Arial', 'Open Sans', sans-serif;
+    font-weight: 400; 
+    
+}
+
+code, pre {
+    font-family: 'Courier New', 'Open Sans', monospace;
+    font-weight: 500 !important; /* Set to a very bold weight for testing */
+}
+
+/* Use Segoe UI Black for headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', 'Open Sans', sans-serif;
+    font-weight: 700 !important; /* Explicitly set font-weight to bolder */
+    color: var(--title-color) !important;
+}
+
+/* Specific styling for bold text */ b, strong { 
+    font-family: 'Arial', 'Open Sans', sans-serif; 
+    font-weight: 800; /* Bold weight */ 
+    color: var(--md-primary-fg-color); /* You can change the color or add other styles */
+}
+
+/* :root {
+    --md-admonition-icon--gitlab: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 256 256%27%3E%3Cpath fill=%27%23FC6D26%27 d=%27M127.897 14.306L106.863 78.875h42.068L127.897 14.306zM166.934 132.755 127.897 14.305 194.79 132.755h-27.856zM106.865 78.875 85.83 14.305h42.068L106.865 78.875zM52.07 132.755h27.856L127.9 14.306 52.07 132.755zM166.932 132.755 194.79 132.755 194.79 132.755h-55.565l27.707 80.187-55.566-80.187H85.83L127.896 14.305 166.932 132.755z%27/%3E%3C/svg%3E')
+  }
+  .md-typeset .admonition.gitlab,
+  .md-typeset details.gitlab {
+    border-color: rgb(252, 109, 38);
+  }
+  .md-typeset .gitlab > .admonition-title,
+  .md-typeset .gitlab > summary {
+    background-color: rgba(252, 109, 38, 0.1);
+  }
+  .md-typeset .gitlab > .admonition-title::before,
+  .md-typeset .gitlab > summary::before {
+    background-color: rgb(252, 109, 38);
+    -webkit-mask-image: var(--md-admonition-icon--gitlab);
+            mask-image: var(--md-admonition-icon--gitlab);
+  }
+
+  :root {
+    --md-admonition-icon--suit-diamond: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z"/></svg>')
+  }
+  .md-typeset .admonition.suit-diamond,
+  .md-typeset details.suit-diamond {
+    border-color: rgb(43, 155, 70);
+  }
+  .md-typeset .express > .admonition-title,
+  .md-typeset .express > summary {
+    background-color: rgba(43, 155, 70, 0.1);
+  }
+  .md-typeset .express > .admonition-title::before,
+  .md-typeset .express > summary::before {
+    background-color: rgb(43, 155, 70);
+    -webkit-mask-image: var(--md-admonition-icon--suit-diamond);
+            mask-image: var(--md-admonition-icon--suit-diamond);
+  }
+
+*/
+
+
+
+:root {
+  --md-admonition-icon--gitlab: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 256 256%27%3E%3Cpath fill=%27%23FC6D26%27 d=%27M127.897 14.306L106.863 78.875h42.068L127.897 14.306zM166.934 132.755 127.897 14.305 194.79 132.755h-27.856zM106.865 78.875 85.83 14.305h42.068L106.865 78.875zM52.07 132.755h27.856L127.9 14.306 52.07 132.755zM166.932 132.755 194.79 132.755 194.79 132.755h-55.565l27.707 80.187-55.566-80.187H85.83L127.896 14.305 166.932 132.755z%27/%3E%3C/svg%3E');
+  --md-admonition-icon--suit-diamond: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2216%22 fill=%22currentColor%22 class=%22bi bi-suit-diamond%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M2.45 8L8 1.939 13.55 8 8 14.061 2.45 8zm1.737-.667L8 12.227l3.813-4.894L8 3.773 4.187 7.333z%22/%3E%3C/svg%3E');
+  --md-admonition-icon--github: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.91-.88-1.15-.88-1.15-.72-.49.05-.48.05-.48.79.06 1.2.81 1.2.81.71 1.22 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.57 7.57 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/%3E%3C/svg%3E');
+}
+
+.md-typeset .admonition.gitlab,
+.md-typeset details.gitlab {
+  border-color: rgb(252, 109, 38);
+}
+
+.md-typeset .gitlab > .admonition-title,
+.md-typeset .gitlab > summary {
+  background-color: rgba(252, 109, 38, 0.1);
+}
+
+.md-typeset .gitlab > .admonition-title::before,
+.md-typeset .gitlab > summary::before {
+  background-color: rgb(252, 109, 38);
+  -webkit-mask-image: var(--md-admonition-icon--gitlab);
+  mask-image: var(--md-admonition-icon--gitlab);
+}
+
+.md-typeset .admonition.express,
+.md-typeset details.express {
+  border-color: rgb(199, 251, 13);
+}
+
+.md-typeset .express > .admonition-title,
+.md-typeset .express > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+
+.md-typeset .express > .admonition-title::before,
+.md-typeset .express > summary::before {
+  background-color: rgb(199, 251, 13);
+  -webkit-mask-image: var(--md-admonition-icon--suit-diamond);
+  mask-image: var(--md-admonition-icon--suit-diamond);
+}
+
+.md-typeset .admonition.github,
+.md-typeset details.github {
+  border-color: rgb(0, 128, 255);
+}
+
+.md-typeset .github > .admonition-title,
+.md-typeset .github > summary {
+  background-color: rgba(36, 41, 46, 0.1);
+}
+
+.md-typeset .github > .admonition-title::before,
+.md-typeset .github > summary::before {
+  background-color: rgb(255, 255, 255);
+  -webkit-mask-image: var(--md-admonition-icon--github);
+  mask-image: var(--md-admonition-icon--github);
+}
+
+
+.md-grid {
+  max-width: 100%;
+}
