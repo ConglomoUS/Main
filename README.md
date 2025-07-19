@@ -32,11 +32,19 @@ Before committing any changes, follow these steps:
     
     Press `CTRL + C` in the terminal
 
-5. **Deploy to GitHub Pages**
+5. **Commit changes**
+    
+    Create a commit with a descriptive message documenting your changes.
+
+6. **Deploy to GitHub Pages**
     ```bash
     mkdocs gh-deploy
     ```
 
-6. **Commit changes**
-    
-    Create a commit with a descriptive message documenting your changes.
+7. **Check GitHub Actions**  
+   
+    In GitHub, check the Actions tab for a queued workflow. Wait till it completes and validate the site has been updated.
+
+    > **Note**  
+    > Please wait - GitHub Actions can take between 5-30 minutes to complete deployment. Do not run additional deployments while one is in progress.
+
