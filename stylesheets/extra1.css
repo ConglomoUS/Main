@@ -6,15 +6,15 @@
 /* Define Segoe UI Font Faces */
 @font-face {
     font-family: 'Segoe UI';
-    src: url('../fonts/segoeui.ttf') format('truetype'),
-         url('../fonts/segoeuil.ttf') format('truetype');
+    src: url('fonts/segoeui.ttf') format('truetype'),
+         url('fonts/segoeuil.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Segoe UI Black';
-    src: url('../fonts/segoeuib.ttf') format('truetype');
+    src: url('fonts/segoeuib.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,7 +22,7 @@
 /* Normal */
 @font-face {
     font-family: 'Arial';
-    src: url('../fonts/arial.ttf') format('truetype');
+    src: url('fonts/arial.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +30,7 @@
 /* Bold */
 @font-face {
     font-family: 'Arial';
-    src: url('../fonts/arialbd.ttf') format('truetype');
+    src: url('fonts/arialbd.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -38,7 +38,7 @@
 /* Italic */
 @font-face {
     font-family: 'Arial';
-    src: url('../fonts/ariali.ttf') format('truetype');
+    src: url('fonts/ariali.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -46,7 +46,7 @@
 /* Bold Italic */
 @font-face {
     font-family: 'Arial';
-    src: url('../fonts/arialbi.ttf') format('truetype');
+    src: url('fonts/arialbi.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
@@ -54,7 +54,7 @@
 /* Narrow Normal */
 @font-face {
     font-family: 'Arial Narrow';
-    src: url('../fonts/ARIALN.TTF') format('truetype');
+    src: url('fonts/ARIALN.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -62,7 +62,7 @@
 /* Narrow Bold */
 @font-face {
     font-family: 'Arial Narrow';
-    src: url('../fonts/ARIALNB.TTF') format('truetype');
+    src: url('fonts/ARIALNB.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -70,7 +70,7 @@
 /* Narrow Italic */
 @font-face {
     font-family: 'Arial Narrow';
-    src: url('../fonts/ARIALNI.TTF') format('truetype');
+    src: url('fonts/ARIALNI.TTF') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -78,7 +78,7 @@
 /* Narrow Bold Italic */
 @font-face {
     font-family: 'Arial Narrow';
-    src: url('../fonts/ARIALNBI.TTF') format('truetype');
+    src: url('fonts/ARIALNBI.TTF') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
@@ -87,7 +87,7 @@
 /* Normal */
 @font-face {
     font-family: 'Courier New';
-    src: url('../fonts/COUR.TTF') format('truetype');
+    src: url('fonts/COUR.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -95,7 +95,7 @@
 /* Bold */
 @font-face {
     font-family: 'Courier New';
-    src: url('../fonts/COURBD.TTF') format('truetype');
+    src: url('fonts/COURBD.TTF') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -103,7 +103,7 @@
 /* Italic */
 @font-face {
     font-family: 'Courier New';
-    src: url('../fonts/COURI.TTF') format('truetype');
+    src: url('fonts/COURI.TTF') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -111,7 +111,7 @@
 /* Bold Italic */
 @font-face {
     font-family: 'Courier New';
-    src: url('../fonts/COURBI.TTF') format('truetype');
+    src: url('fonts/COURBI.TTF') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
