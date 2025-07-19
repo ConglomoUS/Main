@@ -104,7 +104,3 @@ The modification works by registering an empty COM server for the Windows 11 con
 - **Access denied errors:** Verify Command Prompt is running with administrative privileges
 - **Registry modification fails:** Check Windows version compatibility (Windows 11 required)
 - **Script not executing on first logon:** Verify the RunOnce registry entry and file paths are correct
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
